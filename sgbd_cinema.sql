@@ -54,15 +54,17 @@ horario varchar(100),
 data_filme date
 );
 
-select*from clientes;
+select*from clientes; 
 
 drop table sessao;
 
 insert into ingressos(preco, tipo, cod_assento) value('27,50','meia','A27');
 
-insert into clientes(cpf, nome, data_nascimento) value(65478912312,'Alice Alves','2010-01-20');
+insert into clientes(cpf, nome, data_nascimento) value(14247234664, 'Sueli Vido', '1990-11-11');
 
-update clientes set cpf=15975346825 where cpf=542402;
+update clientes set nome='Bruno Silva' where cpf=9889434675;
+
+delete from clientes where cpf=14247234;
 
 truncate table sessao;
 
